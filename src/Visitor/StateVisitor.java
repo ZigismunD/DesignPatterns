@@ -1,6 +1,7 @@
 package Visitor;
 
 public class StateVisitor implements Visitor {
+    private int bonusPoints = 0;
 
     public StateVisitor() {
 
@@ -8,16 +9,19 @@ public class StateVisitor implements Visitor {
 
     @Override
     public void visit(Charmander charmander) {
-        System.out.println("I am a charmander!");
+        bonusPoints += 5;
+        System.out.println("Charmander gets 5 bonus points bringing the total to: " + this.bonusPoints + "!");
     }
 
     @Override
     public void visit(Charmeleon charmeleon) {
-        System.out.println("I am Charmeleon!");
+        bonusPoints += 10;
+        System.out.println("Charmaleon gets 10 bonus points bringing the total to: " + this.bonusPoints + "!");
     }
 
     @Override
     public void visit(Charizard charizard) {
-        System.out.println("I am Charizard");
+        bonusPoints += 15;
+        System.out.println("Charizard gets 15 bonus points bringing the total to: " + this.bonusPoints + "!");
     }
 }
