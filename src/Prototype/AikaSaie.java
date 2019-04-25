@@ -8,7 +8,7 @@ public class AikaSaie implements Runnable {
         Kello kello = new Kello("Kello");
         Kello klooniKello = (Kello) kello.clone();
         klooniKello.setKello("Klooni");
-        while (true) {
+        while (loops <= 25) {
             System.out.println(kello);
             System.out.println(klooniKello);
 
@@ -22,7 +22,7 @@ public class AikaSaie implements Runnable {
             }
 
             if (loops == 10) {
-                klooniKello.setAika(5, 20, 55);
+                kello.setAika(5, 20, 55);
             }
             loops++;
 
