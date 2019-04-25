@@ -22,9 +22,7 @@ public class AikaSaie implements Runnable {
             }
 
             if (loops == 10) {
-                klooniKello.setTuntiviisari(new Viisari(5));
-                klooniKello.setMinuuttiviisari(new Viisari(20));
-                klooniKello.setSekuntiviisari(new Viisari(55));
+                klooniKello.setAika(5, 20, 55);
             }
             loops++;
 

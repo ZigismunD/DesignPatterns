@@ -61,4 +61,10 @@ public class Kello implements Prototype {
     public void setKello(String kello) {
         this.kello = kello;
     }
+
+    public void setAika(int tunti, int minuutti, int sekunti) {
+        this.tuntiviisari.setAika(tunti);
+        this.minuuttiviisari.setAika(minuutti);
+        this.sekuntiviisari.setAika(sekunti);
+    }
 }
