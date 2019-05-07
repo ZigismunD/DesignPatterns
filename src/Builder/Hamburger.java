@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Hamburger {
 
-    private Object object;
+    protected Object object;
 
     public void setSampyla(String sampyla) {
         if (object instanceof ArrayList) {
